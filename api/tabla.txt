@@ -1,0 +1,15 @@
+create table producto(
+     id int not null auto_increment,
+     nombre varchar(20),
+     descripcion text,
+     precio float,
+     descuento int,
+     fecha_inicial_descuento date,
+     fecha_final_descuento date,
+     fecha_creacion date,
+     primary key(id)
+ );
+
+
+ insert into producto values (default,'limonada de coco','limonada de coco',5000,20,'2019-06-15','2019-06-29',current_date);
+insert into producto values (default,'cocada','cocada',3000,0,null,null,current_date);
